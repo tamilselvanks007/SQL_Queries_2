@@ -1,0 +1,77 @@
+// Create a table called students
+CREATE TABLE students(
+    SNo INT NOT NULL primary Key,
+    StudentName TEXT NOT NULL,
+    Email TEXT NOT NULL,
+    Qualification TEXT NOT NULL
+);
+
+// Create few records in this table
+INSERT INTO students VALUES
+    (1,"Tamil","tamil@gmail.com","B.E"),
+    (2,"Vasanth","vasanth@gmail.com","B.SC"),
+    (3,"Vishnu","vishnu@gmail.com","MBA"),
+    (4,"Ranjith","ranjith@gmail.com","B.Ed"),
+    (5,"Karthik","karthik@gmail.com","M.tech");
+
+// Display all the records from the table
+SELECT * FROM students;
+
+// Create a table called batch
+CREATE TABLE batch(
+    SNo INT NOT NULL primary Key,
+    BatchName TEXT NOT NULL,
+    Course TEXT NOT NULL,
+    Coordinator TEXT NOT NULL,
+    Language TEXT NOT NULL,
+    NoOfStudents INT NOT NULL
+);
+
+// Create few records in this table
+INSERT INTO batch VALUES 
+    (1,"B29WD","MERN Stack","Divya","English",60),
+    (2,"B30WE","MEAN Stack","Lavanya","Tamil",20),
+    (3,"B30WD","Ethical Hacking","Cinderella","English",56),
+    (4,"B31WD","MEAN Stack","Deepak","Tamil",50),
+    (5,"B31WE","MERN Stack","Andrew","Tamil",25);
+
+// Display all the records from the table
+SELECT * FROM batch;
+
+// Create a table called task
+CREATE TABLE task(
+    Topic TEXT NOT NULL,
+    Task_Date DATE NOT NULL,
+    NoOfStudentsSubmitted INT NOT NULL,
+    Remaining INT NOT NULL
+);
+
+// Create few records in this table
+INSERT INTO task VALUES
+    ("HTML", "2020-10-11", 6, 10),
+    ("React js", "2020-10-12", 7, 9),
+    ("BootStrap", "2020-10-13", 1,1 5),
+    ("Mongodb", "2020-10-14", 5, 11),
+    ("SQL", "2020-10-15", 3, 13);
+
+// Display all the records from the table
+SELECT * FROM task;
+
+// Create a table called mentors
+CREATE TABLE mentors(
+    SNo INT NOT NULL primary Key,
+    Name TEXT NOT NULL,
+    Field TEXT NOT NULL,
+    Language TEXT NOT NULL
+);
+
+// Create few records in this table
+INSERT INTO mentors VALUES 
+    (1,"Tamil","MERN Stack","English and Tamil"),
+    (2,"Lavish","Front End","English"),
+    (3,"Ragav","Ethical Hacking","Tamil"),
+    (4,"Sanjay","Back End","English and Tamil"),
+    (5,"Akbar","MEAN Stack","English and Tamil");
+
+// Display all the records from the table
+SELECT * FROM mentors;
